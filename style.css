@@ -1,0 +1,147 @@
+#iconelocal {
+  width: 12.692px;
+height: 18.16px;
+transform: rotate(179.595deg);
+flex-shrink: 0;
+rotate: 180deg;
+}
+
+.estrela {
+  width: 141.495px;
+height: 141.495px;
+flex-shrink: 0;
+
+
+} 
+.estrelas1 {
+  cursor: pointer;
+
+}
+
+.estrelas1:hover > .estrelaa {
+  opacity: 1;
+  pointer-events: all;
+
+}
+  .estrelas2:hover> .estrelaa {
+  opacity: 1;
+  pointer-events: all;
+
+}
+.estrelas3:hover> .estrelaa {
+  opacity: 1;
+  pointer-events: all;
+
+}
+.estrelas4:hover> .estrelaa {
+  opacity: 1;
+  pointer-events: all;
+
+}
+.estrelas5:hover> .estrelaa {
+  opacity: 1;
+  pointer-events: all;
+
+}
+
+ .estrelaa, .estrelam {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+
+
+}
+
+
+#usuario { 
+  gap: 1vw;
+  
+}
+
+#menu1 {
+  gap: 1vw ;
+  margin-right: 8%;
+}
+
+.formatacao1 {
+  font-size: 19px;
+  font-style: normal;
+  font-family: Inter;
+  color: #F8FFFF;
+  align-items: center;
+}
+
+#enviar {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  display: flex;
+}
+
+#btn-enviar {
+  color: white;
+  background-color: rgba(125, 9, 129, 1) !important;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+#opiniao {
+  border-radius: 20px;
+  background-color: #DDDCDD;
+
+}
+
+#caixa-pesquisa {
+  padding: 10px;
+  width: 30vw;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color:  rgb(235, 235, 235);
+}
+
+#destaque {
+  margin: 2vw;
+}
+
+.destaque1 {
+  position: relative;
+  display: flex;
+}
+
+.texto1 {
+  position: absolute;
+    bottom: 0.1px;
+    right: 0.1px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte do texto */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+}
+.btn-conhecer {
+  color: white;
+  background-color: rgba(125, 9, 129, 1) !important;
+  padding: 15px;
+  width: 80%;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.menu-list {
+  transform: rotate(90deg);
+  
+}
+.menu-barra {
+  transform: rotate(-90deg);
+  font-size: 3vw;
+  display: block;
+}
+
+@font-face{
+  font-family: fonteLalezzar;
+  src: url([Lalezzar-Regular.ttf]);
+  }
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="w-full h-[2vh] bg-white flex justify-center items-center ">
+      <img src="./Uso/iconlocal.svg" id="iconelocal" alt="iconlocal">
+      <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
+      <div class="text-black text-sm font-normal font-['Inter'] p-1">Alterar localização</div>
+    </div>
+    <div class="w-full h-full bg-fuchsia-800 flex justify-between">
+      <img class="w-[197px] h-[157px]" src="./Uso/appnight.png" />
+      <div class="Pesquisar flex items-center">
+        <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
+        <button type="submit"><img class="w-[30px]" src="./Uso/lupa.png" alt=""></button>
+      </div>
+      <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
+        |||
+      </div>
+      
+      <div id="menu1" class="flex items-center md:flex hidden">
+        <div class="formatacao1">Pagina Inicial</div>
+        <div class="formatacao1">Estabelecimentos</div>
+        <div class=" formatacao1">Informações</div>
+      </div>
+      <div class="flex" id="usuario">
+        <div class="text-white text-[19px] font-normal font-['Inter']">Usuário</div>
+        <div class="text-white text-[19px] font-normal font-['Inter']">Sair</div>
+      </div>
+    </div>
+  </header>
+  <div id="destaque" class="w-full flex justify-center">
+    <div>
+      <div class="text-[19px] font-['Inter']">Locais em destaque</div>
+      <div class="flex">
+        <div class="destaque1">
+          <img class="w-[50vw] h-[50vh]" src="./Uso/image1.png" />
+          <div class="texto1">Destaque 1</div>
+        </div>
+        <div class="block">
+          <div class="destaque1">
+            <img class="w-[31.8vw] h-[30vh]" src="./Uso/image 2.png" />
+            <div class="texto1 text-[20px]">Destaque 2</div>
+          </div>
+          <div class="flex ">
+            <div class="destaque1">
+              <img class="w-[15.9vw] h-[20vh]" src="./Uso/image 3.png" />
+              <div class="texto1 text-[16px]">Destaque 3</div>
+            </div>
+            <div class="destaque1">
+              <img class="w-[15.9vw] h-[20vh]" src="./Uso/image 4.png" />
+              <div class="texto1 text-[16px]">Destaque 4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full flex justify-center">
+    <div class="block">
+      <div style="font-size: 19px; font-family: Inter;">Restaurantes próximos.</div>
+      <ul class="flex gap-20 justify-between">
+        <li>
+          <img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
+          <div class="font-size: 19px; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
+          <div class="flex gap-1 ml-2 mt-2">
+            <div id="local">Local</div>
+            <div> Número</div>
+          </div>
+          <div class="flex justify-center">
+            <button type="button" class="btn-conhecer mt-4">Conhecer</button>
+          </div>
+        </li>
+        <li><img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
+          <div class="font-size: 19px; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
+          <div class="flex gap-1 ml-2 mt-2 ">
+            <div id="local">Local</div>
+            <div> Número</div>
+          </div>
+          <div class="flex justify-center">
+            <button type="button" class="btn-conhecer mt-4">Conhecer</button>
+          </div>
+        </li>
+        <li><img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
+          <div class="font-size: 19px; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
+          <div class="flex gap-1 ml-2 mt-2">
+            <div id="local">Local</div>
+            <div> Número</div>
+          </div>
+          <div class="flex justify-center">
+            <button type="button" class="btn-conhecer mt-4">Conhecer</button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <footer>
+    <div class="w-full h-[20vh] bg-fuchsia-800 mt-10">
+    </div>
+  </footer>
+</body>
+
+</html>
