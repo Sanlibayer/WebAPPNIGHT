@@ -17,11 +17,12 @@
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Alterar localização</div>
     </div>
-    <div class="w-full h-full bg-fuchsia-800 flex justify-between">
-      <img class="w-[197px] h-[157px]" src="./Uso/appnight.png" />
+    <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
+      <img class="w-[197px] h-[157px] md:flex hidden" src="./Uso/appnight.png" />
+      <img class="w-[89px] h-[71px] md:hidden items-center " src="./Uso/appnight.png" />
       <div class="Pesquisar flex items-center">
         <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
-        <button type="submit"><img class="w-[30px]" src="./Uso/lupa.png" alt=""></button>
+        <button type="submit"><img class="w-[30px] ml-2" src="./Uso/lupa.png" alt=""></button>
       </div>
       <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
         |||
@@ -68,10 +69,10 @@
   <div class="w-full flex justify-center">
     <div class="block">
       <div style="font-size: 19px; font-family: Inter;">Restaurantes próximos.</div>
-      <ul class="flex gap-20 justify-between">
+      <ul class="flex gap-4 justify-between">
         <li>
           <img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
-          <div class="font-size: 19px; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
+          <div class="font-size: 19vw; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
           <div class="flex gap-1 ml-2 mt-2">
             <div id="local">Local</div>
             <div> Número</div>

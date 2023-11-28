@@ -55,7 +55,7 @@ flex-shrink: 0;
 
 #usuario { 
   gap: 1vw;
-  
+  margin-right: 2%;
 }
 
 #menu1 {
@@ -102,24 +102,45 @@ flex-shrink: 0;
   background-color:  rgb(235, 235, 235);
 }
 
-#destaque {
-  margin: 2vw;
-}
+
 
 .destaque1 {
   position: relative;
   display: flex;
 }
+#destaque {
+  flex-wrap: 20vw ;
+}
 
 .texto1 {
-  position: absolute;
-    bottom: 0.1px;
-    right: 0.1px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Cor do texto */
-    font-size: 24px; /* Tamanho da fonte do texto */
-    font-family: Arial, sans-serif; /* Fonte do texto */
+    color: white;
+    font-size: 2vw; 
+    font-family: Arial, sans-serif; 
+}
+.texto2 {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 1.5vw; 
+  font-family: Arial, sans-serif; 
+}
+.texto3, .texto4 {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 1.2vw; 
+  font-family: Arial, sans-serif; 
 }
 .btn-conhecer {
   color: white;
