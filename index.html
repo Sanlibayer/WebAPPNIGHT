@@ -12,54 +12,59 @@
 <body>
   <header>
 
-    <div class="w-full h-[2vh] bg-white flex justify-center items-center ">
+    <div class="w-full bg-white flex justify-center items-center ">
       <img src="./Uso/iconlocal.svg" id="iconelocal" alt="iconlocal">
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
-      <div class="text-black text-sm font-normal font-['Inter'] p-1">Alterar localização</div>
+      <div id="localizacao" class="text-black text-sm font-normal font-['Inter'] p-1 cursor-pointer">Alterar localização</div>
     </div>
     <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
       <img class="w-[197px] h-[157px] md:flex hidden" src="./Uso/appnight.png" />
-      <img class="w-[89px] h-[71px] md:hidden items-center " src="./Uso/appnight.png" />
+      <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="./Uso/appnight.png" />
       <div class="Pesquisar flex items-center">
         <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
         <button type="submit"><img class="w-[30px] ml-2" src="./Uso/lupa.png" alt=""></button>
       </div>
       <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
         |||
+        <ul class="header-menu-list-submenu">
+          <li>Pagina Inicial</li>
+          <li>Estabelecimentos</li>
+          <li>Informações</li>
+        </ul>
       </div>
-      
-      <div id="menu1" class="flex items-center md:flex hidden">
-        <div class="formatacao1">Pagina Inicial</div>
-        <div class="formatacao1">Estabelecimentos</div>
-        <div class=" formatacao1">Informações</div>
-      </div>
-      <div class="flex" id="usuario">
-        <div class="text-white text-[19px] font-normal font-['Inter']">Usuário</div>
-        <div class="text-white text-[19px] font-normal font-['Inter']">Sair</div>
-      </div>
+
+      <ul id="menu1" class="flex items-center md:flex hidden">
+        <li class="formatacao1">Pagina Inicial</li>
+        <li class="formatacao1">Estabelecimentos</li>
+        <li class=" formatacao1">Informações</li>
+      </ul>
+      <ul class="flex" id="usuario">
+        <li class="text-white text-[19px] font-normal font-['Inter']">Usuário</li>
+        <li id="sair" class="text-white text-[19px] font-normal font-['Inter']">Sair</li>
+      </ul>
     </div>
   </header>
   <div id="destaque" class="w-full flex justify-center">
     <div>
       <div class="text-[19px] font-['Inter']">Locais em destaque</div>
-      <div class="flex">
+      <div class="flex flex-wrap justify-center">
         <div class="destaque1">
-          <img class="w-[50vw] h-[50vh]" src="./Uso/image1.png" />
-          <div class="texto1">Destaque 1</div>
+          <img class="w-[660px]" src="./Uso/image1.png" />
+          <div class="texto1 text-[25px]">Destaque 1</div>
         </div>
         <div class="block">
           <div class="destaque1">
-            <img class="w-[31.8vw] h-[30vh]" src="./Uso/image 2.png" />
+            <img class="w-[493px] " src="./Uso/image 2.png" />
             <div class="texto1 text-[20px]">Destaque 2</div>
           </div>
           <div class="flex ">
             <div class="destaque1">
-              <img class="w-[15.9vw] h-[20vh]" src="./Uso/image 3.png" />
-              <div class="texto1 text-[16px]">Destaque 3</div>
+              <img class="w-[244px] " src="./Uso/image 3.png" />
+              <div class="texto1 text-[17px]">Destaque 3</div>
             </div>
             <div class="destaque1">
-              <img class="w-[15.9vw] h-[20vh]" src="./Uso/image 4.png" />
-              <div class="texto1 text-[16px]">Destaque 4</div>
+              <img class="w-[249px] " src="./Uso/image 4.png" />
+              <div class="texto1 text-[17px]">Destaque 4</div>
             </div>
           </div>
         </div>
@@ -72,8 +77,8 @@
       <ul class="flex gap-4 justify-between">
         <li>
           <img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
-          <div class="font-size: 19vw; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
-          <div class="flex gap-1 ml-2 mt-2">
+          <div class="font-size: 19vw; font-family: Inter; mt-4" id="estabelecimento">Restaurante</div>
+          <div class="flex gap-1 mt-2">
             <div id="local">Local</div>
             <div> Número</div>
           </div>
@@ -82,18 +87,18 @@
           </div>
         </li>
         <li><img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
-          <div class="font-size: 19px; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
-          <div class="flex gap-1 ml-2 mt-2 ">
+          <div class="font-size: 19px; font-family: Inter; mt-4" id="estabelecimento">Restaurante</div>
+          <div class="flex gap-1 mt-2 ">
             <div id="local">Local</div>
             <div> Número</div>
           </div>
-          <div class="flex justify-center">
+          <div class="justify-center">
             <button type="button" class="btn-conhecer mt-4">Conhecer</button>
           </div>
         </li>
         <li><img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
-          <div class="font-size: 19px; font-family: Inter; mt-4 ml-2" id="estabelecimento">Restaurante</div>
-          <div class="flex gap-1 ml-2 mt-2">
+          <div class="font-size: 19px; font-family: Inter; mt-4" id="estabelecimento">Restaurante</div>
+          <div class="flex gap-1 mt-2">
             <div id="local">Local</div>
             <div> Número</div>
           </div>
@@ -106,7 +111,13 @@
     </div>
   </div>
   <footer>
-    <div class="w-full h-[20vh] bg-fuchsia-800 mt-10">
+    <div class="w-full h-[20vh] bg-fuchsia-800 mt-10 flex justify-center items-center">
+      <div>Contato:
+        <div class="flex gap-1">
+     <img src="./Uso/git.svg" />
+     <a href="https://github.com/Sanlibayer" class="hover:underline ">@sanlibayer</a>
+    </div>
+    </div>
     </div>
   </footer>
 </body>

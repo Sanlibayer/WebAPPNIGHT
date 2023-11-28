@@ -10,65 +10,70 @@
 </head>
 
 <body>
-  <header >
-    
-    <div class="w-full h-[45px] bg-white flex justify-center items-center ">
+  <header>
+
+    <div class="w-full bg-white flex justify-center items-center ">
       <img src="./Uso/iconlocal.svg" id="iconelocal" alt="iconlocal">
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Alterar localização</div>
     </div>
-    <div class="w-full h-[154px] bg-fuchsia-800 flex">
-      <img class="w-[197px] h-[157px]" src="./Uso/appnight.png" />
-      <div id="menu1" class="flex items-center">
+    <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
+      <img class="w-[197px] h-[157px] md:flex hidden" src="./Uso/appnight.png" />
+      <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="./Uso/appnight.png" />
+      <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
+        |||
+        <ul class="header-menu-list-submenu">
+          <li>Pagina Inicial</li>
+          <li>Estabelecimentos</li>
+          <li>Informações</li>
+        </ul>
+      </div>
+      
+      <div id="menu1" class="flex items-center md:flex hidden">
         <div class="formatacao1">Pagina Inicial</div>
         <div class="formatacao1">Estabelecimentos</div>
         <div class=" formatacao1">Informações</div>
       </div>
-      <div class="flex md:flex" id="usuario">
+      <div class="flex" id="usuario">
         <div class="text-white text-[19px] font-normal font-['Inter']">Usuário</div>
         <div class="text-white text-[19px] font-normal font-['Inter']">Sair</div>
       </div>
     </div>
   </header>
   <div class="flex-col flex items-center ">
-    <div class=" text-fuchsia-800 text-[65px] font-bold fonteLalezzar p-14">Avalie nosso site!</div>
+    <div class=" text-fuchsia-800 text-[10vw] font-bold fonteLalezzar ">Avalie nosso site!</div>
     <div class="flex p-10">
       <div class="flex estrelas1">
-        <img src="./Uso/estrelacinza.svg" class="estrela" alt="">
-        <img src="./Uso/meiaestrela.svg" class="estrela estrelam" alt="">     
+        <img src="./Uso/estrelacinza.svg" class="estrela" alt="">    
         <img src="./Uso/estrelaamarela.svg" class="estrela estrelaa" id="estrelaUM" alt="">
     </div>
     <div class="flex estrelas2">
-      <img src="./Uso/estrelacinza.svg" class="estrela" alt="">
-      <img src="./Uso/meiaestrela.svg" class="estrela estrelam" alt="">       
+      <img src="./Uso/estrelacinza.svg" class="estrela" alt="">      
       <img src="./Uso/estrelaamarela.svg" class="estrela estrelaa" id="estrelaDOIS" alt="">
   </div>
   <div class="flex estrelas3">
-    <img src="./Uso/estrelacinza.svg" class="estrela" alt="">
-    <img src="./Uso/meiaestrela.svg" class="estrela estrelam" alt="">       
+    <img src="./Uso/estrelacinza.svg" class="estrela" alt="">      
     <img src="./Uso/estrelaamarela.svg" class="estrela estrelaa " id="estrelaTRES" alt="">
 </div>
 <div class="flex estrelas4">
-  <img src="./Uso/estrelacinza.svg" class="estrela" alt="">
-  <img src="./Uso/meiaestrela.svg" class="estrela estrelam" alt="">       
+  <img src="./Uso/estrelacinza.svg" class="estrela" alt="">     
   <img src="./Uso/estrelaamarela.svg" class="estrela estrelaa" id="estrelaQUATRO" alt="">
 </div>
     <div class="flex estrelas5">
-      <img src="./Uso/estrelacinza.svg" class="estrela" alt="">
-      <img src="./Uso/meiaestrela.svg" class="estrela estrelam" alt="">       
+      <img src="./Uso/estrelacinza.svg" class="estrela" alt="">      
       <img src="./Uso/estrelaamarela.svg" class="estrela estrelaa" id="estrelaCINCO" alt="">
   </div>
 </div>
   </div>
   
-    <div class="text-fuchsia-800 text-[46px] font-bold fonteLalezzar flex items-center flex-col">Até que é massa!</div>
+    <div class="text-fuchsia-800 text-[30px] font-bold fonteLalezzar flex items-center flex-col">Até que é massa!</div>
 
   <div class="flex-col flex items-center p-10">
     <div class="text-fuchsia-800 text-[40px] font-normal fonteLalezzar">Dê sua opinião:</div>
-    <textarea name="opinião" id="opiniao" cols="100" rows="10" class="p-2"></textarea>
+    <textarea name="opinião" id="opiniao" cols="25" rows="3" class="p-2"></textarea>
       <div class="mt-7">
         <button type="button" id="btn-enviar">
-                <div class="w-[520px] h-[50px] text-neutral-200 text-5xl font-bold font-family: fonteLalezzar; m-5">Enviar avaliação</div>
+                <div class=" text-neutral-200 text-4xl font-bold font-family: fonteLalezzar; m-5">Enviar avaliação</div>
         </button>
       </div>
       <img src="./Uso/barra-enviar.svg" alt="">

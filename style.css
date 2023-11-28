@@ -7,10 +7,7 @@ rotate: 180deg;
 }
 
 .estrela {
-  width: 141.495px;
-height: 141.495px;
-flex-shrink: 0;
-
+  width: 10vw;  
 
 } 
 .estrelas1 {
@@ -44,23 +41,46 @@ flex-shrink: 0;
 
 }
 
- .estrelaa, .estrelam {
+ .estrelaa{
   opacity: 0;
   position: absolute;
   pointer-events: none;
 
 
 }
+#opiniao {
+  font-size: 25px;
+}
 
+#localizacao:hover {
+  text-decoration: underline;
+
+}
+
+#sair:hover {
+  text-decoration: underline;
+}
 
 #usuario { 
   gap: 1vw;
   margin-right: 2%;
+
+}
+
+#usuario li {
+  cursor: pointer;
+}
+
+#menu1 li:hover {
+  text-decoration: underline;
 }
 
 #menu1 {
   gap: 1vw ;
-  margin-right: 8%;
+
+}
+#menu1 li {
+  cursor: pointer;
 }
 
 .formatacao1 {
@@ -69,6 +89,7 @@ flex-shrink: 0;
   font-family: Inter;
   color: #F8FFFF;
   align-items: center;
+
 }
 
 #enviar {
@@ -103,23 +124,20 @@ flex-shrink: 0;
 }
 
 
-
 .destaque1 {
   position: relative;
   display: flex;
+  
 }
-#destaque {
-  flex-wrap: 20vw ;
-}
+
 
 .texto1 {
     position: absolute;
-    bottom: 1px;
-    right: 1px;
+    bottom: 0.1vw;
+    right: 0.1vw;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 2vw; 
     font-family: Arial, sans-serif; 
 }
 .texto2 {
@@ -145,20 +163,49 @@ flex-shrink: 0;
 .btn-conhecer {
   color: white;
   background-color: rgba(125, 9, 129, 1) !important;
-  padding: 15px;
-  width: 80%;
+  padding: 1.1vw;
+  width: 100%;
   text-transform: uppercase;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 18px;
 }
 .menu-list {
   transform: rotate(90deg);
+  z-index: 1;
   
 }
+
 .menu-barra {
   transform: rotate(-90deg);
   font-size: 3vw;
   display: block;
+}
+
+.menu-list:hover > .header-menu-list-submenu {
+  opacity: 1;
+  pointer-events: all;
+
+
+}
+
+.header-menu-list-submenu {
+  position: absolute;
+  width: 100px;  
+  opacity: 0;
+  pointer-events: none;
+  transform: rotate(-90deg);
+  text-align: center;
+  bottom: 70px;
+  left: 50px;
+
+}
+
+.header-menu-list-submenu li{
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 10px;
+  color: black;
+
 }
 
 @font-face{
