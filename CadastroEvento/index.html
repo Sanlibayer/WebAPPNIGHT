@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Night</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          screens: {
+            '2xl': '1897px'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<header>
+  
+  <div class="w-full bg-white flex justify-center items-center ">
+    <img src="iconlocal.svg" id="iconelocal" alt="iconlocal">
+    <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
+    <div id="localizacao" class="text-black text-sm font-normal font-['Inter'] p-1 cursor-pointer">Alterar localização</div>
+  </div>
+  <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
+    <img class="w-[197px] h-[157px] md:flex hidden" src="appnight.png" />
+    <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="appnight.png" />
+    <div class="Pesquisar flex items-center">
+      <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
+      <button type="submit"><img class="w-[30px] ml-2" src="lupa.png" alt=""></button>
+    </div>
+    <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
+      |||
+      <ul class="header-menu-list-submenu">
+        <li>Pagina Inicial</li>
+        <li>Estabelecimentos</li>
+        <li>Informações</li>
+      </ul>
+    </div>
+    <ul id="menu1" class="flex items-center md:flex hidden">
+      <li class="formatacao1">Pagina Inicial</li>
+      <li class="formatacao1">Estabelecimentos</li>
+      <li class=" formatacao1">Informações</li>
+    </ul>
+    <ul class="flex" id="usuario">
+      <li class="text-white text-[19px] font-normal font-['Inter']">Usuário</li>
+      <li id="sair" class="text-white text-[19px] font-normal font-['Inter']">Sair</li>
+    </ul>
+  </div>
+</header>
+
+<body>
+  <div class="flex">
+    <img class="container mx-auto hidden md:block md:!h-[760px]" id="cadastro-eventos-img" src="teste.jpg" />
+    <div id="cadastro-eventos-form" class="container sm:flex-grow bg-fuchsia-950  flex-grow bg-fuchsia-950 md:!h-[760px] md:!pt-[30px] md:!pl-[200px]">
+      <h1 class="container mx-auto sm: text-4xl md:text-[65px] font-light font-['Inria Sans'] text-white font-bold">
+        Cadastro de
+        Eventos</h1>
+      <div id="nome-evento-form"
+        class="md:!pt-[50px] container md:!w-[514px] md:!h-[47px] text-white md:!text-[25px] font-light font-['Inria Sans']">Nome do Evento
+        <div>
+          <input id="nome-evento-input" type="text"
+            class="container mx-auto md:!w-[340px] md:!h-[51px] absolute bg-zinc-300 rounded-[100px] shadow text-black p-[10px]">
+        </div>
+      </div>
+      <div class="md:!pt-[50px]">
+        <div id="data-evento-form"
+          class="container md:!w-[514px] md:!h-[47px] text-white md:!text-[25px] font-light font-['Inria Sans']">Data
+          <div>
+            <input type="date" id="data-evento-input" type="text"
+              class="container md:!w-[340px] md:!h-[51px] absolute bg-zinc-300 rounded-[100px] shadow text-black p-[10px]">
+          </div>
+        </div>
+      </div>
+      <div class="md: pt-[100px]">
+        <button type="submit" id="btn-img" class="bg-fuchsia-700 rounded-full">Carregar Imagens do Evento</button>
+      </div>
+      <div>
+        <div id="descricao-evento-form"
+          class="container md:!w-[514px] md:!h-[47px] text-white md:!text-[25px] font-light font-['Inria Sans']">Descrição
+          <div>
+            <input id="descricao-evento-input" type="text"
+              class="container md:!w-[340px] absolute bg-zinc-300 rounded-[25px] shadow text-black ">
+          </div>
+        </div>
+      </div>
+      <div class="container pl-[25px] pt-[70px] md:pt-[45px]">
+        <button type="submit" id="btn-criar-evento" class="bg-fuchsia-700 rounded-full">Criar Evento</button>
+      </div>
+
+
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
