@@ -171,6 +171,7 @@ rotate: 180deg;
 .menu-list {
   transform: rotate(90deg);
   z-index: 1;
+
 }
 
 .menu-barra {
@@ -225,6 +226,7 @@ rotate: 180deg;
     justify-items: center;
 
   }
+
 
 }
 @font-face{
