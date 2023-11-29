@@ -1,105 +1,117 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            },
-            screens: {
-              '2xl': '1897px'
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          screens: {
+            '2xl': '1897px'
           }
         }
       }
-    </script>
-    <title>App Night</title>
-  </head>
-  
-  <body>
-    <header>
-  
-      <div class="w-full bg-white flex justify-center items-center ">
-        <img src="iconlocal.svg" id="iconelocal" alt="iconlocal">
-        <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
-        <div id="localizacao" class="text-black text-sm font-normal font-['Inter'] p-1 cursor-pointer">Alterar localização</div>
-      </div>
-      <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
-        <img class="w-[197px] h-[157px] md:flex hidden" src="appnight.png" />
-        <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="appnight.png" />
-        <div class="Pesquisar flex items-center">
-          <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
-          <button type="submit"><img class="w-[30px] ml-2" src="lupa.png" alt=""></button>
-        </div>
-        <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
-          |||
-          <ul class="header-menu-list-submenu">
-            <li>Pagina Inicial</li>
-            <li>Estabelecimentos</li>
-            <li>Informações</li>
-          </ul>
-        </div>
-        <ul id="menu1" class="flex items-center md:flex hidden">
-          <li class="formatacao1">Pagina Inicial</li>
-          <li class="formatacao1">Estabelecimentos</li>
-          <li class=" formatacao1">Informações</li>
-        </ul>
-        <ul class="flex" id="usuario">
-          <li class="text-white text-[19px] font-normal font-['Inter']">Usuário</li>
-          <li id="sair" class="text-white text-[19px] font-normal font-['Inter']">Sair</li>
-        </ul>
-      </div>
-    </header>
-    <div class="grid sm:mx-0 sm:grid-cols-2 container mx-auto">
-      <div id="img-cadastro-usuario" class="bg-white h-[80vh]  items-center hidden md:flex ">
-        <img src="balada.jpg" alt="balada" id="img-usuario">
-      </div>
-      <div id="lateral-cadastro-usuario">
-        <form class="p-10 h-[17vh] flex flex-col bg-white text-center">
-          <h1 class="text-2xl text-fuchsia-800 font-bold  mb-[10px] ">Crie uma conta</h1>
-          <h1 class="text-2xl text-fuchsia-800 font-bold">ou entre com seu e-mail</h1>
-        </form>
-        <form class="pl-[5px]">
-          <div class="form-control mt-4">
-            <input type="text" id="nome" placeholder="Nome" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="sobrenome" id="nome" placeholder="Sobrenome" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="text" id="cpf" placeholder="CPF" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="text" id="email" placeholder="E-mail" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="text" id="cep" placeholder="CEP" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="text" id="endereco" placeholder="Endereço" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="text" id="bairro" placeholder="Bairro" />
-          </div>
-          <div class="form-control mt-4 flex">
-            <input type="text" id="cidade" placeholder="Cidade" />
-            <input type="text" id="uf" placeholder="UF" />
-          </div>
-          <div class="form-control mt-4">
-            <input type="text" id="telefone" placeholder="Telefone" />
-          </div>
-          <div class="mt-4">
-            <button type="button" id="btn-login">Login</button>
-          </div>
-        </form>
-        
+    }
+  </script>
+  <title>App Night</title>
+</head>
 
+<body>
+  <header>
+
+    <div class="w-full bg-white flex justify-center items-center ">
+      <img src="iconlocal.svg" id="iconelocal" alt="iconlocal">
+      <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
+      <div id="localizacao" class="text-black text-sm font-normal font-['Inter'] p-1 cursor-pointer">Alterar localização
       </div>
-      
     </div>
-
-
+    <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
+      <img class="w-[197px] h-[157px] md:flex hidden" src="appnight.png" />
+      <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="appnight.png" />
+      <div class="Pesquisar flex items-center">
+        <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
+        <button type="submit"><img class="w-[30px] ml-2" src="lupa.png" alt=""></button>
+      </div>
+      <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
+        |||
+        <ul class="header-menu-list-submenu">
+          <li>Pagina Inicial</li>
+          <li>Estabelecimentos</li>
+          <li>Informações</li>
+        </ul>
+      </div>
+      <ul id="menu1" class="flex items-center md:flex hidden">
+        <li class="formatacao1">Pagina Inicial</li>
+        <li class="formatacao1">Estabelecimentos</li>
+        <li class=" formatacao1">Informações</li>
+      </ul>
+      <ul class="flex" id="usuario">
+        <li class="text-white text-[19px] font-normal font-['Inter']">Usuário</li>
+        <li id="sair" class="text-white text-[19px] font-normal font-['Inter']">Sair</li>
+      </ul>
+    </div>
+  </header>
+  <div class="grid sm:mx-0 sm:grid-cols-2 container mx-auto">
+    <div id="img-cadastro-usuario" class="bg-white h-[80vh]  items-center hidden md:flex ">
+      <img src="balada.jpg" alt="balada" id="img-usuario">
+    </div>
+    <div id="lateral-cadastro-usuario">
+      <form class="p-10 h-[16vh] flex flex-col bg-white text-center">
+        <h1 class="text-2xl text-fuchsia-800 font-bold  mb-[10px] ">Crie uma conta</h1>
+        <h1 class="text-2xl text-fuchsia-800 font-bold">ou entre com seu e-mail</h1>
+      </form>
+      <form class="pl-[5px]">
+        <div class="form-control mt-4">
+          <input type="text" id="nome" placeholder="Nome" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="sobrenome" id="nome" placeholder="Sobrenome" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="text" id="cpf" placeholder="CPF" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="text" id="email" placeholder="E-mail" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="text" id="cep" placeholder="CEP" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="text" id="endereco" placeholder="Endereço" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="text" id="bairro" placeholder="Bairro" />
+        </div>
+        <div class="form-control mt-4 flex">
+          <input type="text" id="cidade" placeholder="Cidade" />
+          <input type="text" id="uf" placeholder="UF" />
+        </div>
+        <div class="form-control mt-4">
+          <input type="text" id="telefone" placeholder="Telefone" />
+        </div>
+        <div class="mt-4">
+          <button type="button" id="btn-login">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div id="rodape" class="w-full h-[20vh] bg-fuchsia-800 flex flex-col justify-center items-center">
+      <div class="font-bold m-2">Contatos:
+        <div id="rodape1" class="flex gap-1 text-black font-normal ">
+          <img src="git.svg" />
+          <a href="https://github.com/Sanlibayer" class="hover:underline ">@sanlibayer</a>
+          <a href="https://github.com/RicardoMandarino" class="hover:underline ">@ricardomandarino</a>
+          <a href="https://github.com/Matheus16777" class="hover:underline ">@matheus16777</a>
+          <a href="https://github.com/luizeduardooo" class="hover:underline ">@luizeduardooo</a>
+          <a href="https://github.com/eloiza-ribeiro" class="hover:underline ">@eloiza-ribeiro</a>
+        </div>
+      </div>
+      <a href="./avaliacao.html" class="font-bold text-white mt-2 hover:underline">Avalie nosso site!</a>
+    </div>
+  </footer>
+</body>
