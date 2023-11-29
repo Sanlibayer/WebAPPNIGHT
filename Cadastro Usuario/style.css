@@ -1,0 +1,240 @@
+/* style cadastro usuario*/
+#img-usuario{
+    width: 940px;
+    height: 766px;
+}
+.form-control input {
+    padding: 10px;
+    background-color: rgb(228, 228, 228);
+    border-left: 4px solid rgb(134 25 143);
+    width: 100%;
+}
+#btn-login {
+    color: white;
+    background-color: rgb(134 25 143) !important;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+
+/* FIM */
+#iconelocal {
+    width: 12.692px;
+  height: 18.16px;
+  transform: rotate(179.595deg);
+  flex-shrink: 0;
+  rotate: 180deg;
+  }
+  
+  .estrela {
+    width: 10vw;  
+  
+  } 
+  .estrelas1 {
+    cursor: pointer;
+  
+  }
+  
+  .estrelas1:hover > .estrelaa {
+    opacity: 1;
+    pointer-events: all;
+  
+  }
+    .estrelas2:hover> .estrelaa {
+    opacity: 1;
+    pointer-events: all;
+  
+  }
+  .estrelas3:hover> .estrelaa {
+    opacity: 1;
+    pointer-events: all;
+  
+  }
+  .estrelas4:hover> .estrelaa {
+    opacity: 1;
+    pointer-events: all;
+  
+  }
+  .estrelas5:hover> .estrelaa {
+    opacity: 1;
+    pointer-events: all;
+  
+  }
+  
+   .estrelaa{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  
+  
+  }
+  #opiniao {
+    font-size: 25px;
+  }
+  
+  #localizacao:hover {
+    text-decoration: underline;
+  
+  }
+  
+  #sair:hover {
+    text-decoration: underline;
+  }
+  
+  #usuario { 
+    gap: 1vw;
+    margin-right: 2%;
+  
+  }
+  
+  #usuario li {
+    cursor: pointer;
+  }
+  
+  #menu1 li:hover {
+    text-decoration: underline;
+  }
+  
+  #menu1 {
+    gap: 1vw ;
+  
+  }
+  #menu1 li {
+    cursor: pointer;
+  }
+  
+  .formatacao1 {
+    font-size: 19px;
+    font-style: normal;
+    font-family: Inter;
+    color: #F8FFFF;
+    align-items: center;
+  
+  }
+  
+  #enviar {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+  }
+  
+  #btn-enviar {
+    color: white;
+    background-color: rgba(125, 9, 129, 1) !important;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: bold;
+  }
+  
+  #opiniao {
+    border-radius: 20px;
+    background-color: #DDDCDD;
+  
+  }
+  
+  #caixa-pesquisa {
+    padding: 10px;
+    width: 30vw;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color:  rgb(235, 235, 235);
+  }
+  
+  
+  .destaque1 {
+    position: relative;
+    display: flex;
+    
+  }
+  
+  
+  .texto1 {
+      position: absolute;
+      bottom: 0.1vw;
+      right: 0.1vw;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif; 
+  }
+  .texto2 {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.5vw; 
+    font-family: Arial, sans-serif; 
+  }
+  .texto3, .texto4 {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.2vw; 
+    font-family: Arial, sans-serif; 
+  }
+  .btn-conhecer {
+    color: white;
+    background-color: rgba(125, 9, 129, 1) !important;
+    padding: 1.1vw;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .menu-list {
+    transform: rotate(90deg);
+    z-index: 1;
+    
+  }
+  
+  .menu-barra {
+    transform: rotate(-90deg);
+    font-size: 3vw;
+    display: block;
+  }
+  
+  .menu-list:hover > .header-menu-list-submenu {
+    opacity: 1;
+    pointer-events: all;
+  
+  
+  }
+  
+  .header-menu-list-submenu {
+    position: absolute;
+    width: 100px;  
+    opacity: 0;
+    pointer-events: none;
+    transform: rotate(-90deg);
+    text-align: center;
+    bottom: 70px;
+    left: 50px;
+  
+  }
+  
+  .header-menu-list-submenu li{
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    color: black;
+  
+  }
+  
+  @font-face{
+    font-family: fonteLalezzar;
+    src: url([Lalezzar-Regular.ttf]);
+    }
+  
+  
