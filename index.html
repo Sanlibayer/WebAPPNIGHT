@@ -15,16 +15,17 @@
     <div class="w-full bg-white flex justify-center items-center ">
       <img src="./Uso/iconlocal.svg" id="iconelocal" alt="iconlocal">
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
-      <div id="localizacao" class="text-black text-sm font-normal font-['Inter'] p-1 cursor-pointer">Alterar localização</div>
+      <div id="localizacao" class="text-black text-sm font-normal font-['Inter'] p-1 cursor-pointer">Alterar localização
+      </div>
     </div>
     <div class="w-full h-[157px] bg-fuchsia-800 flex justify-between">
       <img class="w-[197px] h-[157px] md:flex hidden" src="./Uso/appnight.png" />
       <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="./Uso/appnight.png" />
-      <div class="Pesquisar flex items-center">
-        <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
+      <div class="flex items-center">
+        <input type="text" id="caixa-pesquisa" class="flex md:flex hidden" placeholder="Buscar estabelecimento">
         <button type="submit"><img class="w-[30px] ml-2" src="./Uso/lupa.png" alt=""></button>
       </div>
-      <div class="open-modal menu-list font-bold text-white text-4xl md:hidden">
+      <div class="menu-list font-bold text-white text-4xl md:hidden">
         |||
         <ul class="header-menu-list-submenu">
           <li>Pagina Inicial</li>
@@ -44,7 +45,7 @@
       </ul>
     </div>
   </header>
-  <div id="destaque" class="w-full flex justify-center">
+  <div id="destaque" class="w-full flex justify-center mt-2">
     <div>
       <div class="text-[19px] font-['Inter']">Locais em destaque</div>
       <div class="flex flex-wrap justify-center">
@@ -58,7 +59,7 @@
             <div class="texto1 text-[20px]">Destaque 2</div>
           </div>
           <div class="flex ">
-            <div class="destaque1">
+            <div class="destaque1 ">
               <img class="w-[244px] " src="./Uso/image 3.png" />
               <div class="texto1 text-[17px]">Destaque 3</div>
             </div>
@@ -73,8 +74,8 @@
   </div>
   <div class="w-full flex justify-center">
     <div class="block">
-      <div style="font-size: 19px; font-family: Inter;">Restaurantes próximos.</div>
-      <ul class="flex gap-4 justify-between">
+      <div style="font-size: 19px; font-family: Inter; margin-top: 4vw;">Restaurantes próximos.</div>
+      <ul class="flex gap-4 justify-between mt-2">
         <li>
           <img style="width: 22vw;  border-radius: 4px" src="./Uso/image1.png" />
           <div class="font-size: 19vw; font-family: Inter; mt-4" id="estabelecimento">Restaurante</div>
@@ -111,13 +112,18 @@
     </div>
   </div>
   <footer>
-    <div class="w-full h-[20vh] bg-fuchsia-800 mt-10 flex justify-center items-center">
-      <div>Contato:
-        <div class="flex gap-1">
-     <img src="./Uso/git.svg" />
-     <a href="https://github.com/Sanlibayer" class="hover:underline ">@sanlibayer</a>
-    </div>
-    </div>
+    <div id="rodape" class="w-full h-[20vh] bg-fuchsia-800 mt-10 flex flex-col justify-center items-center">
+      <div class="font-bold m-2">Contatos:
+        <div id="rodape1" class="flex gap-1 text-black font-normal ">
+          <img src="./Uso/git.svg" />
+          <a href="https://github.com/Sanlibayer" class="hover:underline ">@sanlibayer</a>
+          <a href="https://github.com/RicardoMandarino" class="hover:underline ">@ricardomandarino</a>
+          <a href="https://github.com/Matheus16777" class="hover:underline ">@matheus16777</a>
+          <a href="https://github.com/luizeduardooo" class="hover:underline ">@luizeduardooo</a>
+          <a href="https://github.com/eloiza-ribeiro" class="hover:underline ">@eloiza-ribeiro</a>
+        </div>
+      </div>
+      <a href="./avaliacao.html" class="font-bold text-white mt-2 hover:underline">Avalie nosso site!</a>
     </div>
   </footer>
 </body>

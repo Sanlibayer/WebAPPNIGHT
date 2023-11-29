@@ -127,9 +127,7 @@ rotate: 180deg;
 .destaque1 {
   position: relative;
   display: flex;
-  
 }
-
 
 .texto1 {
     position: absolute;
@@ -173,7 +171,6 @@ rotate: 180deg;
 .menu-list {
   transform: rotate(90deg);
   z-index: 1;
-  
 }
 
 .menu-barra {
@@ -205,9 +202,31 @@ rotate: 180deg;
   background-color: rgba(255, 255, 255, 1);
   font-size: 10px;
   color: black;
+  cursor: pointer;
 
 }
+.header-menu-list-submenu li:hover{
+  background-color: rgb(225, 39, 231);
+  color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  .destaque1 {
+    margin-top: 2vw;
 
+  }
+  #rodape1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #rodape{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+}
 @font-face{
   font-family: fonteLalezzar;
   src: url([Lalezzar-Regular.ttf]);
