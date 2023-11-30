@@ -22,10 +22,8 @@ $(() => {
     }
     if (!avaliacao.nota) {
       alert("Nota não informada!");
-      $(".estrelaa").addClass("invalid");
       return;
   }
-  $(".estrelaa").removeClass("invalid");
 
   console.log(avaliacao);
 
