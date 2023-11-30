@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+.invalid {
+  border: 1px solid rgb(127 29 29) !important;    
+  border-left: 4px solid rgb(127 29 29) !important;
+}
 
 
 /* FIM */
