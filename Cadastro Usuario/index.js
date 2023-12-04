@@ -85,6 +85,7 @@ $(() => {
         $("#telefone").removeClass("invalid");
 
         console.log(values);
+        alert("Cadastro Realizado")
     })
 
 
