@@ -229,7 +229,43 @@
   background-color: rgb(225, 39, 231);
   color: #ffffff;
 }
-
+#modali {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0,0,0,.6);
+  display: none;
+}
+.modal-active {
+  display: block !important;
+}
+.caixa-controle input {
+  padding: 10px;
+  background-color: rgb(245 245 244);
+  border-left: 4px solid rgb(125 9 121);
+  width: 100%;
+}
+#fechar-modali {
+  font-size: 2vw;
+  color: #fff;
+  font-style: bold;
+}
+.btn {
+  color: white;
+  background-color: rgba(125, 9, 129, 1) !important;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 100px;
+  font-weight: bold;
+}
+.invalid {
+  border: 1px solid rgb(127 29 29) !important;    
+  border-left: 4px solid rgb(127 29 29) !important;
+}
 
 @media screen and (max-width: 480px) {
   .destaque1 {
@@ -249,7 +285,15 @@
     justify-items: center;
 
   }
-
+  .caixa-controle {
+    padding: 2px;
+    background-color: rgb(245 245 244);
+    border-left: 0.5px solid rgb(125 9 121);
+    width: 100%;
+  }
+  .mobile {
+    font-size: 10px;
+  }
 
 }
 

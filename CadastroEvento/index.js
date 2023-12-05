@@ -29,7 +29,7 @@ $(() => {
         $("#descricao-evento-input").removeClass("invalid");
 
         console.log(eventos);
-
+        alert("Evento cadastrado!")
     })
 })
 

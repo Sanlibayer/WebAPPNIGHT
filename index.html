@@ -11,7 +11,38 @@
 
 <body>
   <header>
-
+    <div id="modali">
+      <a id="fechar-modali" onclick="closeModal()">x</a>
+      <div class="w-screen h-screen flex items-center justify-center">
+        <div id="modal-body" class="w-2/3 h-[80vh] bg-white">
+          <div class="grid grid-cols-2">
+            <img src="./Uso/fundo.png"  class="h-[80vh] flex items-center container hidden md:block">
+            <form class="p-20 h-[80vh] flex flex-col justify-center">
+              <h1 class="text-4xl text-fuchsia-800">Login</h1>
+              <div class="caixa-controle mt-4">
+                <input type="text" id="email" placeholder="Nome de Usuário" />
+              </div>
+              <div class="caixa-controle mt-4">
+                <input type="password" id="senha" placeholder="Password" />
+              </div>
+              <div class="mt-4 flex justify-between">
+                <span><input type="checkbox" /> Manter logado </span>
+                <a class="text-fuchsia-800">Esqueceu a senha?</a>
+              </div>
+              <div class="mt-4">
+                <button type="button" class="btn mb-2" id="entrar" >
+                  ENTRAR
+                </button>
+                <button type="button" class="btn" id="criar">
+                 <a href="./Cadastro Usuario/index.html">CRIAR CONTA</a> 
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
     <div class="w-full bg-white flex justify-center items-center ">
       <img src="./Uso/iconlocal.svg" id="iconelocal" alt="iconlocal">
       <div class="text-black text-sm font-normal font-['Inter'] p-1">Ponta Aguda - Blumenau - SC</div>
@@ -22,13 +53,13 @@
       <img class="w-[197px] h-[157px] md:flex hidden" src="./Uso/appnight.png" />
       <img class="w-[89px] h-[71px] md:hidden items-center mt-[10%]" src="./Uso/appnight.png" />
       <div class="flex items-center">
-        <input type="text" id="caixa-pesquisa" class="text-[2.3vw]" placeholder="Buscar estabelecimento">
+        <input type="text" id="caixa-pesquisa" placeholder="Buscar estabelecimento">
         <button type="submit"><img class="w-[30px] ml-2" src="./Uso/lupa.png" alt=""></button>
       </div>
       <div class="menu-list font-bold text-white text-4xl md:hidden">
         |||
         <ul class="header-menu-list-submenu">
-          <li>Pagina Inicial</li>
+          <li><a href="../APPNIGHT/index.html">Pagina Inicial</a></li>
           <li>Estabelecimentos</li>
           <li>Informações</li>
         </ul>
@@ -40,7 +71,7 @@
         <li class=" formatacao1">Informações</li>
       </ul>
       <ul class="flex" id="usuario">
-        <li class="text-white text-[19px] font-normal font-['Inter']">Usuário</li>
+        <li class="open-modali text-white text-[19px] font-normal font-['Inter']">Login</li>
         <li id="sair" class="text-white text-[19px] font-normal font-['Inter']">Sair</li>
       </ul>
     </div>
@@ -126,6 +157,8 @@
       <a href="./avaliacao.html" class="font-bold text-white mt-2 hover:underline">Avalie nosso site!</a>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

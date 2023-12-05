@@ -26,7 +26,7 @@ $(() => {
   }
 
   console.log(avaliacao);
-
+  alert("Nota enviada!")
   })
 
 })
