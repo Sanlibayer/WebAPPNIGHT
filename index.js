@@ -13,7 +13,7 @@ for (let open of openModal) {
     open.addEventListener(`click`, showModal);
 }
 
-$(() => {
+
     $("#entrar").click(() => {
         const logar = {
             email: $("#email")[0].value,
@@ -29,11 +29,10 @@ $(() => {
         if (!senha.value) {
             alert("Senha não informado!");
             senha.classList.add(`invalid`);
-          } else {
-            senha.classList.remove(`invalid`);
-          }
-          
+            return;
+        }
+        $("#senha").removeClass("invalid");
         console.log(logar);
         alert("Efetuando login!")
+        
     })
-})
