@@ -96,6 +96,19 @@
   cursor: pointer;
 }
 
+#menu2 li:hover {
+  text-decoration: underline;
+}
+
+#menu2 {
+  gap: 1vw;
+
+}
+
+#menu2 li {
+  cursor: pointer;
+}
+
 .formatacao1 {
   font-size: 19px;
   font-style: normal;
@@ -295,6 +308,17 @@
     font-size: 10px;
   }
 
+  #login1 {
+    padding: 2rem !important;
+  }
+
+  #email, #senha, #entrar, #criar {
+    width: 50vw;
+  }
+  #texto-login {
+  font-size: 15px;
+  gap: 80px;
+  
 }
 
 @font-face {
