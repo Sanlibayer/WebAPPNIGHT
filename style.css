@@ -280,7 +280,8 @@
   border-left: 4px solid rgb(127 29 29) !important;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px)
+ {
   .destaque1 {
     margin-top: 2vw;
 
@@ -315,6 +316,7 @@
   #email, #senha, #entrar, #criar {
     width: 50vw;
   }
+
   #texto-login {
   font-size: 15px;
   gap: 80px;
@@ -325,3 +327,4 @@
   font-family: fonteLalezzar;
   src: url([Lalezzar-Regular.ttf]);
 }
+ }
